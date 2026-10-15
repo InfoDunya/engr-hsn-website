@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="description" content="Official Android app portfolio of Engr.HSN. Discover apps, get support, and read privacy policies.">
+  <title>Engr.HSN | Android App Developer</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Engr.HSN home">
+      <span class="brand-mark">H</span><span>Engr.<strong>HSN</strong></span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">☰</button>
+    <nav id="main-nav" class="nav">
+      <a href="#apps">Apps</a><a href="#about">About</a><a href="#support">Support</a>
+      <a class="nav-cta" href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="pulse"></span> ANDROID APP DEVELOPER</span>
+        <h1>Useful ideas.<br><span>Thoughtful apps.</span></h1>
+        <p class="hero-intro">Welcome to the official app portfolio of Engr.HSN. Explore Android apps designed to make everyday tasks simpler, more productive, and more accessible.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#apps">Explore my apps <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="#support">Get support</a>
+        </div>
+        <div class="hero-meta"><span class="meta-dot"></span> Independent Android development</div>
+      </div>
+      <div class="hero-art" aria-label="Decorative illustration of mobile app screens">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="phone phone-back"><div class="phone-speaker"></div><div class="screen-mini"><span class="mini-icon">✓</span><span class="mini-line"></span><span class="mini-line short"></span><span class="mini-card"></span></div></div>
+        <div class="phone phone-front"><div class="phone-speaker"></div><div class="phone-top"><span>Good ideas</span><span>•••</span></div><div class="app-symbol">H<span>✦</span></div><div class="phone-title">Made for<br>everyday life.</div><div class="phone-line"></div><div class="phone-line narrow"></div><div class="phone-button">Get started&nbsp; →</div></div>
+        <span class="float-chip chip-one">✦ &nbsp; Simple by design</span><span class="float-chip chip-two">◈ &nbsp; Android apps</span>
+      </div>
+    </section>
+
+    <section class="section apps-section" id="apps">
+      <div class="section-heading"><div><span class="eyebrow">THE PORTFOLIO</span><h2>Apps & projects</h2></div><p>Find an app, learn what it does, and open its official Google Play listing.</p></div>
+      <div class="notice" id="apps-notice"><span class="notice-icon">i</span><div><strong>Portfolio setup</strong><p>Sample app cards are included so you can preview the design. Replace them in <code>apps.js</code> with your real app details and Play Store links before publishing.</p></div></div>
+      <div class="app-grid" id="app-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-badge"><div class="big-h">H<span>✦</span></div><span>ENGR.HSN</span></div>
+      <div class="about-copy"><span class="eyebrow">ABOUT THE DEVELOPER</span><h2>Technology with a purpose.</h2><p>Engr.HSN is an independent developer profile focused on building practical Android experiences. This website is the central place to discover published apps, find support information, and access app-specific privacy policies.</p><div class="about-points"><span>✓ User-focused experiences</span><span>✓ Clear support information</span><span>✓ Privacy-conscious development</span></div></div>
+    </section>
+
+    <section class="support-section section" id="support">
+      <div class="support-panel"><div><span class="eyebrow">NEED A HAND?</span><h2>We're here to help.</h2><p>Have a question, found a bug, or need help with one of the apps? Email the developer and include the app name and your device details.</p></div><a class="button button-light" id="support-email-link" href="mailto:REPLACE_WITH_SUPPORT_EMAIL">Contact support <span aria-hidden="true">↗</span></a></div>
+      <p class="support-small">Please do not send passwords, payment card details, or other sensitive information by email.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="index.html"><span class="brand-mark">H</span><span>Engr.<strong>HSN</strong></span></a>
+    <p>Independent Android app developer.</p>
+    <div class="footer-links"><a href="privacy.html">Privacy policy</a><a href="#support">Contact & support</a><a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer">Google Play</a></div>
+    <div class="copyright">© <span id="year"></span> Engr.HSN. All rights reserved.</div>
+  </footer>
+  <script src="apps.js"></script><script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="description" content="Privacy policy information for apps published by Engr.HSN.">
+  <title>Privacy Policy | Engr.HSN</title><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">H</span><span>Engr.<strong>HSN</strong></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">☰</button><nav id="main-nav" class="nav"><a href="index.html#apps">Apps</a><a href="index.html#about">About</a><a href="index.html#support">Support</a><a class="nav-cta" href="privacy.html">Privacy</a></nav></header>
+  <main class="page-main">
+    <a class="back-link" href="index.html">← Back to home</a>
+    <span class="eyebrow">PRIVACY & TRANSPARENCY</span><h1>Privacy policy</h1>
+    <p class="page-lead">This is a general policy template for apps published by Engr.HSN. Review and customize it to accurately describe the data practices of each app before making it public.</p>
+    <div class="warning"><strong>Important:</strong> This template is not a substitute for reviewing your app's actual behavior. Replace every placeholder and remove or rewrite statements that are not true for your app. If your apps collect different data, publish a separate policy page for each app.</div>
+    <article class="policy-box">
+      <p><strong>Effective date:</strong> [ENTER DATE]</p>
+      <p><strong>Developer:</strong> Engr.HSN</p>
+      <p><strong>Contact:</strong> <a id="policy-email" href="mailto:REPLACE_WITH_SUPPORT_EMAIL">REPLACE_WITH_SUPPORT_EMAIL</a></p>
+      <h2>1. Scope</h2><p>This policy explains how information is handled by <strong>[APP NAME]</strong> (“the app”), published by Engr.HSN. It applies only to the app identified above and its related support services.</p>
+      <h2>2. Information we collect</h2><p><strong>Customize this section to match the app.</strong> Describe any information the app collects or receives, such as information you provide, device or diagnostic information, approximate location, account information, or usage data. If the app does not collect personal information, state that only after verifying its code, SDKs, and services.</p>
+      <h2>3. How information is used</h2><p>Explain the specific purposes for which information is used, such as providing app features, maintaining security, fixing errors, or responding to support requests. Include only purposes that apply to the app.</p>
+      <h2>4. Sharing and third-party services</h2><p>List any third-party services used by the app (for example, analytics, advertising, crash reporting, sign-in, or cloud services) and link to their privacy policies where appropriate. Explain what information may be shared and why. If no third-party services are used, verify that statement before publishing.</p>
+      <h2>5. Data retention and deletion</h2><p>Explain how long information is retained, how it is protected, and how users can request deletion where applicable. If users can create accounts, explain how they can delete their account and associated data, including any in-app deletion path required by applicable store policies.</p>
+      <h2>6. Children's privacy</h2><p>Describe whether the app is directed to children or knowingly collects information from children. State the safeguards and steps taken if information is collected inappropriately. Make this section accurate for your app and target audience.</p>
+      <h2>7. Security</h2><p>Describe reasonable safeguards used to protect information. No method of storage or transmission is completely secure, and this section should not promise absolute security.</p>
+      <h2>8. Changes to this policy</h2><p>This policy may be updated to reflect changes to the app or its data practices. The revised policy will be published on this page with an updated effective date.</p>
+      <h2>9. Contact us</h2><p>For privacy questions or requests, contact <a id="policy-email-2" href="mailto:REPLACE_WITH_SUPPORT_EMAIL">REPLACE_WITH_SUPPORT_EMAIL</a>.</p>
+    </article>
+  </main>
+  <footer class="site-footer"><a class="brand footer-brand" href="index.html"><span class="brand-mark">H</span><span>Engr.<strong>HSN</strong></span></a><p>Independent Android app developer.</p><div class="footer-links"><a href="privacy.html">Privacy policy</a><a href="index.html#support">Contact & support</a><a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer">Google Play</a></div><div class="copyright">© <span id="year"></span> Engr.HSN. All rights reserved.</div></footer>
+  <script src="apps.js"></script><script src="script.js"></script>
+  <script>
+    const email = window.DEVELOPER_CONFIG && window.DEVELOPER_CONFIG.supportEmail;
+    if (email && !email.startsWith("REPLACE_")) {
+      ["policy-email", "policy-email-2"].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) { el.href = "mailto:" + email; el.textContent = email; }
+      });
+    }
+  </script>
+</body></html>
